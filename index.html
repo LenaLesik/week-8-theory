@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+    .container-fluid {
+            display: grid;
+            gap: 1rem;
+        }
+
+    .row {
+        height: 30vh;
+
+    }
+
+    div {
+        border: 1px solid black;
+    }
+
+    #row{
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    #col-6 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container-fluid vh-100">
+        <div class="row" id="row">
+            <div class="col-6 bg-primary w-100 mt-3 ms-2 d-flex align-items-center justify-content-center text-light" id="col-6" >
+                <p>Gallery</p>
+            </div>
+            <div class="col-6 bg-primary w-100 mt-3 d-flex align-items-center justify-content-center text-light">
+                Title
+            </div>
+            <div class="col-6 bg-primary w-100 d-flex align-items-center justify-content-center text-light">
+                Buy Box
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-primary ms-2 me-2 d-flex align-items-center justify-content-center text-light">
+                <p>Description</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-primary ms-2 me-2 d-flex align-items-center justify-content-center text-light">
+                <p>Related</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
